@@ -2,7 +2,7 @@ import polars as pl
 
 def create_csv(df, columns, file_name):
     df_selected = df.select(columns)
-    df_selected.write_csv(file_name)
+    df_selected.write_csv(f'page_data/{file_name}')
 
 def main():
     df = pl.read_csv('det_tools.csv')
