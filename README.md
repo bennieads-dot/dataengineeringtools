@@ -37,7 +37,7 @@ Follow these steps to contribute to the project:
 
 5. **Commit Your Changes**
    ```bash
-   git add .
+   git add -p (stage your changes)
    git commit -m "Description of your changes"
    git push origin your-branch-name
    ```
