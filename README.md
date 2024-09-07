@@ -31,9 +31,9 @@ Follow these steps to contribute to the project:
 
 4. **Run the Update Script**
    ```bash
-   python create_page_csvs.py
+   python create_page_data.py
    ```
-   This script will create home.csv and tools.csv, overwriting the current files.
+   This script will create home.csv and tools.json, overwriting the current files.
 
 5. **Commit Your Changes**
    ```bash
