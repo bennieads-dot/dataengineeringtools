@@ -12,31 +12,19 @@ Follow these steps to contribute to the project:
    cd dataengineeringtools
    ```
 
-2. **Set Up the Environment**
-   - Ensure you have Python 3.11 installed
-   - Create a virtual environment:
-     ```bash
-     python3.11 -m venv .venv
-     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-     ```
-   - Install the required package:
-     ```bash
-     pip install -r requirements.txt
-     ```
-
-3. **Make Your Changes**
+2. **Make Your Changes**
    - Open the `det_tools.csv` file
    - Update existing tools or add new ones
    - Save your changes
 
-5. **Commit Your Changes**
+3. **Commit Your Changes**
    ```bash
    git add -p (stage your changes)
    git commit -m "Description of your changes"
    git push origin your-branch-name
    ```
 
-6. **Create a Pull Request**
+4. **Create a Pull Request**
    - Go to the repository on GitHub
    - Click on "Pull requests" and then "New pull request"
    - Select your branch and fill in the details of your changes
