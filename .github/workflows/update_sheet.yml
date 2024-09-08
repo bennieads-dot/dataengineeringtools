@@ -1,0 +1,32 @@
+name: Update Google Sheet from CSV
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update_sheet:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Update Google Sheet
+      env:
+        GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+        SHEET_KEY: ${{ secrets.SHEET_KEY }}
+        SHEET_NAME: ${{ secrets.SHEET_NAME }}
+        
+      run: |
+        python update_sheet.py
