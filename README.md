@@ -29,12 +29,6 @@ Follow these steps to contribute to the project:
    - Update existing tools or add new ones
    - Save your changes
 
-4. **Run the Update Script**
-   ```bash
-   python create_page_data.py
-   ```
-   This script will create home.csv and tools.json, overwriting the current files.
-
 5. **Commit Your Changes**
    ```bash
    git add -p (stage your changes)
